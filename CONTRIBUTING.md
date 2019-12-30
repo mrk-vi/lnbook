@@ -17,7 +17,7 @@ Before contributing with a Pull Request, please read the current **PROJECT STATU
 
 All contributions must be properly licensed and attributed. If you are contributing your own original work, then you are offering it under a CC-BY license (Creative Commons Attribution). *You are responsible for adding your own name or pseudonym in the Acknowledgments section in the [Preface](preface.asciidoc), as attribution for your contribution.*
 
-If you are sourcing a contribution from somewhere else, it must carry a compatible license. The book will initially be released under a CC-BY-NC-ND license which means that contributions must be licensed under open licenses such as MIT, CC0, CC-BY, etc. Contributions under a "share-alike" or GPL license are not compatible with the CC-BY-NC-ND license and therefore cannot be accepted.  You need to indicate the original source and original license, by including an asciidoc markup comment above your contribution, like this:
+If you are sourcing a contribution from somewhere else, it must carry a compatible license. The book will initially be released under a CC-BY-NC-ND license which means that contributions must be licensed under open licenses such as MIT, CC0, CC-BY, etc. Contributions under a "share-alike" or GPL license are not compatible with the CC-BY-NC-ND license and therefore cannot be accepted. You need to indicate the original source and original license, by including an asciidoc markup comment above your contribution, like this:
 
 ```
 ////
@@ -30,7 +30,7 @@ Added by: @aantonop
 The best way to contribute to this book is by making a pull request:
 
 1. Login with your GitHub account or create one now
-2. [Fork](https://github.com/lnbook/lnbook#fork-destination-box) the `lnbook` repository. Work on your fork.
+2. [Fork](https://github.com/lnbook/lnbook#fork-destination-box) the `lnbook` repository. Work on your fork. In particular you can clone it to your local computer with `git clone https://github.com/ADD_YOUR_GIT_USER_NAME_HERE/lnbook.git`
 3. Create a new branch on which to make your change, e.g. `git checkout -b my_code_contribution`, or make the change on the `develop` branch.
 4. Please do one pull request PER asciidoc file, to avoid large merges. Edit the asciidoc file where you want to make a change or create a new asciidoc file in the `contrib` directory if you're not sure where your contribution might fit.
 5. Edit `preface.asciidoc` and add your own name to the list of contributors under the Acknowledgment section. Use your name, or a GitHub username, or a pseudonym.
@@ -55,6 +55,7 @@ Adjust heading style in each section as follows:
 5. Should include a unique anchor all lower case, underscore separated, within double square brackets (eg. [[intro_to_htlcs]]).
 6. Headings should be followed by a blank line.
 7. Heading should be followed by a paragraph of text, not a lower-level heading without any text. If you find one like this, add a TODO comment (line of 4 slashes "////", line with "TODO: add paragraph", line of 4 slashes)
+8. Often it seems useful to link to a webpage / url. Since the research community figured out that every year about 50% of all outstanding url's become invalid we encourage you to use the wayback machine / Web Archive at: http://web.archive.org and provide a link to a saved copy of the web page.
 
 Complete Example:
 
@@ -62,7 +63,7 @@ Complete Example:
 [[intro_to_ln]]
 == Introduction to the Lightning Network
 
-This is the intro paragraph
+This is the intro paragraph.
 
 [[htlcs_explained]]
 === All about Hash Time-Locked Contracts (HTLCs)
